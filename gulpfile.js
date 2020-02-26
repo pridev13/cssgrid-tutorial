@@ -17,7 +17,7 @@ function compileScss() {
 
 function watchTask() {
 	gulp.watch(
-		['*/*.scss'],
+		['*/*.scss', '*/*.html'],
 			gulp.parallel(compileScss)
 	);
 }
